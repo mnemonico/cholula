@@ -44,6 +44,7 @@ exclude = '''
   | \.tox
   | \.venv
   | \.poetry
+  | LICENSE
   | build
   | dist
   | docs
