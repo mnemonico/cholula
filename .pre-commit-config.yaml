@@ -9,6 +9,3 @@ repos:
             - python
         entry: black
         language: python
-        stages:
-            - commit
-            - commit-msg

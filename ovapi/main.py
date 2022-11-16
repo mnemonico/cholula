@@ -6,7 +6,6 @@ from ovapi.apicalls.extract_to_db import main
 
 logger = logging.getLogger(__name__)
 
-coXO =  'sdsdssd'
 
 @click.group()
 def cli():
