@@ -3,3 +3,4 @@ repos:
     rev: v1.2.3
     hooks:
     -   id: trailing-whitespace
+        name: Trailing whitespaces
