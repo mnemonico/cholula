@@ -1,6 +1,6 @@
 fail_fast: true
 repos:
--   repo: local
+-   repo: https://github.com/psf/black
     hooks:
     -   id: black
         name: Black Formatter
