@@ -7,9 +7,12 @@ from ovapi.apicalls.extract_to_db import main
 logger = logging.getLogger(__name__)
 
 
+
 @click.group()
 def cli():
     pass
+
+
 
 
 @click.command()

@@ -1,10 +1,10 @@
 fail_fast: true
 repos:
 -   repo: local
-    default_stages: [commit]
     hooks:
     -   id: black
         name: Black Formatter
+        language_version: python3.8
         stages:
             - commit
-        entry: poetry run black .
+        language: system
