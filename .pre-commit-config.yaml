@@ -1,6 +1,10 @@
+fail_fast: true
 repos:
 -   repo: local
-    rev: v1.2.3
+    default_stages: [commit]
     hooks:
-    -   id: trailing-whitespace
-        name: Trailing whitespaces
+    -   id: black
+        name: Black Formatter
+        stages:
+            - commit
+        entry: poetry run black .

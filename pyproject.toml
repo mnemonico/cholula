@@ -35,7 +35,7 @@ sphinx = "^5.3.0"
 
 [tool.black]
 line-length = 132
-target-version = ['py37', 'py38', 'py39', 'py310' ]
+target-version = ['py38', 'py39', 'py310' ]
 include = '(ovapi\/.*$|\.pyi?$)'
 exclude = '''
 /(
@@ -48,6 +48,7 @@ exclude = '''
   | dist
   | docs
   | notes
+  | data
 )/
 '''
 

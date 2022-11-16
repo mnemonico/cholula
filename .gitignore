@@ -302,3 +302,5 @@ dmypy.json
 cython_debug/
 
 data
+# Pre-commit
+.run
