@@ -11,10 +11,6 @@ logger = logging.getLogger(__name__)
 def cli():
     pass
 
-
-toTo = "sdsds"
-
-
 @click.command()
 @click.argument("folder", nargs=1, type=str)
 @click.argument("environment", envvar="XDG_CURRENT_DESKTOP")
