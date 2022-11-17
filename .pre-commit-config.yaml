@@ -15,3 +15,7 @@ repos:
             - python
         entry: black
         language: python
+-   repo: https://github.com/jendrikseipp/vulture
+    rev: 'v2.6'  # or any later Vulture version
+    hooks:
+      - id: vulture
