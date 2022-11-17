@@ -55,7 +55,7 @@ exclude = '''
 verbose = false
 
 [tool.vulture]
-exclude = ["file*.py", "dir/"]
+exclude = ["file*.py", "__pycache__/", "dir/"]
 ignore_decorators = ["@app.route", "@require_*", "@retry"]
 ignore_names = ["visit_*", "do_*"]
 make_whitelist = true
