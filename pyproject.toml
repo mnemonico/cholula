@@ -52,7 +52,7 @@ exclude = '''
   | data
 )/
 '''
-verbose = true
+verbose = false
 
 [tool.vulture]
 exclude = ["file*.py", "dir/"]
