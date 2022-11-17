@@ -1,7 +1,9 @@
-import click
-import ovapi.configuration.setup_loggers
 import logging
 import shlex
+
+import click
+
+import ovapi.configuration.setup_loggers
 from ovapi.apicalls.extract_to_db import main
 
 logger = logging.getLogger(__name__)
