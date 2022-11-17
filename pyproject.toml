@@ -55,6 +55,9 @@ exclude = '''
 '''
 verbose = false
 
+[tool.isort]
+profile = "black"
+
 [tool.vulture]
 exclude = ["file*.py", "__pycache__/", "dir/"]
 ignore_decorators = ["@app.route", "@require_*", "@retry"]
