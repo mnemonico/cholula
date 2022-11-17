@@ -8,7 +8,6 @@ repos:
     -   id: trailing-whitespace
     -   id: check-toml
     -   id: check-byte-order-marker
-    -   id: check-toml
     -   id: check-ast
     -   id: check-added-large-files
 -   repo: local
