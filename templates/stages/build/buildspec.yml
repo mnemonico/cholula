@@ -14,13 +14,10 @@ phases:
       # Install httpie
       - python --version
       - python -m pip install --upgrade pip wheel
-      - python -m pip install httpie
   build:
     commands:
       - "cd ${CODEBUILD_SRC_DIR}/${CODE_SRC_DIR}"
       - ls -l
-      - http --version
-      - http PUT pie.dev/put X-API-Token:123 name=John
       - "echo ## echo the player"
       - "/bin/bash ${CODEBUILD_SRC_DIR}/${SCRIPT_DIR}/echoer.sh"
 
