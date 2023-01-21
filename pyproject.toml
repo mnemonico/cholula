@@ -59,11 +59,11 @@ verbose = false
 profile = "black"
 
 [tool.vulture]
-exclude = ["file*.py", "__pycache__/", "dir/"]
+exclude = ["main.py", "file*.py", "__pycache__/", "dir/"]
 ignore_decorators = ["@app.route", "@require_*", "@retry"]
 ignore_names = ["visit_*", "do_*"]
 make_whitelist = true
-min_confidence = 100
+min_confidence = 80
 paths = ["ovapi"]
 sort_by_size = true
 verbose = true

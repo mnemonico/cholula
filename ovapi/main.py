@@ -1,10 +1,10 @@
 import logging
-import shlex
 
 import click
 
 import ovapi.configuration.setup_loggers
-from ovapi.apicalls.extract_to_db import main
+
+# from ovapi.apicalls.extract_to_db import main
 
 logger = logging.getLogger(__name__)
 
@@ -18,14 +18,12 @@ def cli():
 @click.argument("folder", nargs=1, type=str)
 @click.argument("environment", envvar="XDG_CURRENT_DESKTOP")
 def cmd2(folder, environment):
-    print("CMD 2")
-    print(folder, environment)
-    logger.debug("done cmd2")
-    logger.info("done cmd2")
-    logger.warning("done cmd2")
-    logger.error("done cmd2")
-    logger.fatal("done cmd2")
-    main()
+    logger.debug(environment)
+    logger.info(environment)
+    logger.warning(environment)
+    logger.error(environment)
+    logger.fatal(environment)
+    # main()
 
 
 cli.add_command(cmd2)
