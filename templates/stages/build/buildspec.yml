@@ -12,7 +12,6 @@ phases:
       python: 3.8
     commands:
       # Install httpie
-      - yum install epel-release
       - yum install httpie
   build:
     commands:
