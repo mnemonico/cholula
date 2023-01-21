@@ -1,0 +1,30 @@
+version: 0.2
+
+env:
+  variables:
+    SCRIPT_DIR: "./templates/scripts"
+    CODE_SRC_DIR: "."
+    NONESENSE_EVAR: "ACHRAF BAIZ"
+
+phases:
+  install:
+    runtime-versions:
+      python: 3.8
+    commands:
+      # Install httpie
+      - curl -SsL https://packages.httpie.io/deb/KEY.gpg | apt-key add -
+      - curl -SsL -o /etc/apt/sources.list.d/httpie.list https://packages.httpie.io/deb/httpie.list
+      - apt update
+      - apt install httpie
+  build:
+    commands:
+      - "cd ${CODEBUILD_SRC_DIR}/${CODE_SRC_DIR}"
+      - ls -l
+      - http --version
+      - http PUT pie.dev/put X-API-Token:123 name=John
+      - "echo ## echo the player"
+      - "/bin/bash ${CODEBUILD_SRC_DIR}/${SCRIPT_DIR}/echoer.sh"
+
+artifacts:
+  files:
+    - '**/*'
