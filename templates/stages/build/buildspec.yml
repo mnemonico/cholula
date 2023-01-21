@@ -13,10 +13,8 @@ phases:
     commands:
       # Install httpie
       - python --version
-      - curl -SsL https://packages.httpie.io/deb/KEY.gpg | apt-key add -
-      - curl -SsL -o /etc/apt/sources.list.d/httpie.list https://packages.httpie.io/deb/httpie.list
-      - apt update
-      - apt install httpie
+      - python -m pip install --upgrade pip wheel
+      - python -m pip install httpie
   build:
     commands:
       - "cd ${CODEBUILD_SRC_DIR}/${CODE_SRC_DIR}"
