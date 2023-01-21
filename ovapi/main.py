@@ -19,6 +19,7 @@ def cli():
 @click.argument("environment", envvar="XDG_CURRENT_DESKTOP")
 def cmd2(folder, environment):
     logger.debug(environment)
+    logger.debug(folder)
     logger.info(environment)
     logger.warning(environment)
     logger.error(environment)
