@@ -12,7 +12,8 @@ phases:
       python: 3.8
     commands:
       # Install httpie
-      - snap install httpie
+      - yum install epel-release
+      - yum install httpie
   build:
     commands:
       - "cd ${CODEBUILD_SRC_DIR}/${CODE_SRC_DIR}"
