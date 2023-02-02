@@ -21,7 +21,7 @@ phases:
       - pip3 install awscli
   pre_build:
     commands:
-
+      - echo "nothing ro pre-build"
   build:
     commands:
       - "cd ${CODEBUILD_SRC_DIR}/${CODE_SRC_DIR}"
