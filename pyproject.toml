@@ -3,7 +3,19 @@ name = "ovapi"
 version = "0.1.0"
 description = ""
 authors = ["abaiz <b.mohamedachraf@gmail.com>"]
+maintainers = ["abaiz <b.mohamedachraf@gmail.com>"]
 readme = "README.md"
+license = "Proprietary"
+classifiers = [
+        "Development Status :: 4 - Beta",
+        "Environment :: Console",
+        "Intended Audience :: Information Technology",
+        "License :: Other/Proprietary License",
+        "Natural Language :: English",
+        "Operating System :: POSIX :: Linux",
+        "Programming Language :: Python :: 3.8",
+        "Topic :: Software Development :: Libraries :: Python Modules"
+]
 
 [tool.poetry.dependencies]
 python = "^3.8"
